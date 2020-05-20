@@ -8,8 +8,8 @@ namespace PwaTest.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddApplication<PwaTestWebModule>();
-            //services.AddMvc().AddControllersAsServices();
-            //services.AddProgressiveWebApp();
+            services.AddMvc().AddControllersAsServices();
+            services.AddProgressiveWebApp();
         }
 
         public void Configure(IApplicationBuilder app)
